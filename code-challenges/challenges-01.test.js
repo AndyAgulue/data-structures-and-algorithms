@@ -7,10 +7,9 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
-const array = [1, 2, 3, 4, 5];
 const addOne = (arr) => {
   const result = [];
-  array.forEach(function (number){
+  arr.forEach(function (number){
     result.push(number + 1);
   });
   return result;
@@ -23,10 +22,10 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
-const array1 = ['hi', 'how', 'are', 'you'];
+
 const addExclamation = (arr) => {
   const result = [];
-  array1.forEach(function (greeting){
+  arr.forEach(function (greeting){
     result.push(greeting + '!');
   });
   return result;
@@ -39,10 +38,9 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
-const array2 = ['hi', 'how', 'are', 'you'];
 const allUpperCase = (arr) => {
   const result = [];
-  array2.forEach(function (greeting){
+  arr.forEach(function (greeting){
     result.push(greeting.toUpperCase());
   });
   return result;
