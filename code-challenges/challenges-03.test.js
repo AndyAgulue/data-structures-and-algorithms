@@ -41,7 +41,7 @@ const sortNames = (arr) => {
   arr.sort()
   return arr;
   };
-
+// const sortNames = arr => arr.sort();
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
