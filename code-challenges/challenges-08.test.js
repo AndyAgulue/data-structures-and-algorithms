@@ -236,7 +236,6 @@ describe('Testing challenge 2', () => {
   });
 });
 
-
 xdescribe('Testing challenge 3', () => {
   test('It should return an array of strings containing the word and', () => {
     expect(containsAnd(['panda', 'ran', 'and'])).toStrictEqual(['panda', 'and']);
