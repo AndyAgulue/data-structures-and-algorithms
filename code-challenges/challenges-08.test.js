@@ -37,6 +37,7 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
+  return arr.filter(str => /and/.test(str))
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,7 +49,7 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-  // Solution code here...
+  return arr.filter(num => num % 2 > 0)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -235,7 +236,6 @@ describe('Testing challenge 2', () => {
     expect(typeNum([2, 3, 5])).toStrictEqual([2, 3, 5]);
   });
 });
-
 
 xdescribe('Testing challenge 3', () => {
   test('It should return an array of strings containing the word and', () => {
